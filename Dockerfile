@@ -1,6 +1,8 @@
 FROM mongo:latest
-WORKDIR /home
-RUN  apt-get update \
-  && apt-get install -y wget
+
+# Use this if you want to install demo-data
+#WORKDIR /home
+#RUN  apt-get update \
+#  && apt-get install -y wget
 # Download the sample dataset
-RUN wget http://media.mongodb.org/zips.json
+#RUN wget http://media.mongodb.org/zips.json
